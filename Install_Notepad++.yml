@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+          - name: Install notepadplusplus version 7.6.3
+            win_chocolatey:
+                    name: notepadplusplus
+                    version: 7.6.3
+                    pinned: yes
+                    state: latest
+                    allow_multiple: yes
+                    force: yes
+...
